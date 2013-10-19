@@ -1,18 +1,28 @@
 <div id="home" data-role="view" data-title="Home">Home</div>
 
 
-<div id="home" data-role="view" data-layout="main-layout">
-     <img src="http://a121.g.akamai.net/7/121/21164/20130515170249/content.fromyouflowers.com/images/products/large/BF89-11K.jpg"/>
-    <table width="0">
-      <tr><td>Row1</td><td><font color="red">DATA</font></td></tr>
-      <tr><td>Row2</td><td><font color="green">DATA</font></td></tr>
-    </table>
+<div id="gibhome" data-role="view" data-layout="main-layout">
+  <table width="0">
+    <tr><td>Row1</td><td><font color="red">DATA</font></td></tr>
+    <tr><td>Row2</td><td><font color="green">DATA</font></td></tr>
+  </table>
 </div>
+
+<div id="flowers" data-role="view" data-title="Settings" data-layout="main-layout">
+  <img src="http://a121.g.akamai.net/7/121/21164/20130515170249/content.fromyouflowers.com/images/products/large/BF89-11K.jpg"/>
+</div>
+
+
 <div data-role="layout" data-id="main-layout">
     <div data-role="header">
         <div data-role="navbar">
           <span data-role="view-title">GIB-Title</span>
         </div>
     </div>
-    <div data-role="footer">Footer</div>
+    <div data-role="footer">      
+      <div data-role="tabstrip">
+        <a data-icon="home" href="#gibhome">Home</a>
+        <a data-icon="settings" href="#flowers">Settings</a>
+      </div>
+    </div>
 </div>
