@@ -1,6 +1,13 @@
 <!--Add Mobile App HTML -->
+<script type="text/x-kendo-tmpl" id="drinks-template">
+    <a>
+        <img src="images/drink.png" />
+        <h2>#: data #</h2>
+    </a>
+</script>
+
 <div data-role="view">
-    <ul data-role="listview" data-style="inset" data-source="drinks"></ul>
+    <ul data-role="listview" data-style="inset" data-source="drinks" data-template="drinks-template"></ul>
     <div data-role="header">
         <div data-role="navbar">ListView Example</div>
     </div>
