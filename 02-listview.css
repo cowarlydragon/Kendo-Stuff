@@ -1,0 +1,11 @@
+a > img {
+    float: left;
+    width: 4em;
+    margin: 0;
+}
+
+a > h2 {
+    display: inline-block;
+    font-size: 1.1em;
+    margin: 1em 0 1em;
+}
