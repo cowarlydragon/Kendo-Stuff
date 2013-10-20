@@ -3,3 +3,34 @@ http://demos.kendoui.com/mobile/modalview/index.html#/
 reproduce the multi-tab with four different listviews...
 
 do a basic vendor flow
+
+
+- Mainscreen
+  - list of arrangers near location (assume current location)
+    - button to: change location
+    - button to: my orders
+
+- make that a multitab arranger detail (Tabstrip Basic Usage Demo)
+  - "About" arranger blurb + text + location
+    - button to: back
+  - "Bouquets" arranger available arrangements
+    - buttons to: order
+  - "My Garden" arranger garden pictures
+  - "Reviews" history / reviews
+  
+- Order screen
+  - show Bouquest + description (collapsible)
+  - Presaved Target dropdown (button for new target, or expand form if no presaved targets)
+  - Delivery time
+  - CC last-4 (button to new CC/paypal acct)
+  - Special directions
+  - CALL TO ACTION
+  
+- Order summary
+  - Bouquet
+  - Address of delivery
+  - Time + date of delivery (show day of week)
+  - CALL TO ACTION
+  
+My orders: website url for now
+  
