@@ -10,14 +10,12 @@
 </head>
 
 <body>
-    <!-- arranger bouquets -->
-    <div data-role="view" id="tabstrip-arranger-bouquest" data-title="Bouquets" data-layout="arranger-tabstrip">
-      <ul data-role="listview" data-source="arrangerBouquetsData" data-template="arrangerBouquetsTemplate" class="inboxList"></ul>
-    </div>
-    
-
-<!-- arranger bouquets listview template -->
-<script type="script/x-kendo-template" id="arrangerBouquetsTemplate">
+    <!-- VIEW: arranger bouquets listview -->
+  <div data-role="view" id="tabstrip-arranger-bouquets" data-title="Bouquets" data-layout="arranger-tabstrip">
+    <ul data-role="listview" data-source="arrangerBouquetsData" data-template="arrangerBouquetsTemplate" class="inboxList"></ul>
+  </div>
+  <!-- TEMPLATE: arranger bouquets listview  -->
+  <script type="script/x-kendo-template" id="arrangerBouquetsTemplate">
     <h3 class="time">#: BQName#</h3><h3>#: From #</h3>
     <!-- todo: bouquet image -->
     <a class="ORDER"
@@ -26,4 +24,84 @@
         href="\\#inboxActions"
         data-actionsheet-context="#:ID#">ORDER</a>
     <p>#: BQDesc#</p>
+  </script>
+
+  <!-- VIEW: arranger bio and specialties/philosophy -->
+  <div data-role="view" id="tabstrip-arranger-aboutme" data-title="About Me" data-layout="arranger-tabstrip">
+    <ul data-role="listview" data-style="inset" data-type="group">
+      <li>Profile
+          <ul>
+            <li><h2>Mary Manyflowers</h2><img src="http://demos.kendoui.com/mobile/content/mobile/overview/carine.jpg"/></li>
+            <li>Bouqets Arranged <span class="sales-up">410</span></li>
+            <li>Average Rating <span class="sales-up">4.5 stars</span></li>
+          </ul>
+      </li>
+      <li>I'm a slightly obsessive home gardener with only a minor slave labor force that makes the finest in ethically murky organically grown flowers. </li>
+      <li>Styles + Specialties
+          <ul>
+            <li>Princess Bouquets </li>
+            <li>Chocolate and Rose</li>
+            <li>Flowers and Paper Swans</li>
+            <li>Trendy Du Jour</li>
+          </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- VIEW: my garden scrollview -->
+  <div data-role="view" id="tabstrip-arranger-mygarden" data-title="My Garden" data-layout="arranger-tabstrip">
+    <div data-role="scrollview" data-page="2">
+      <div class="photo photo1" data-role="page"></div>
+      <div class="photo photo2" data-role="page"></div>
+      <div class="photo photo3" data-role="page"></div>
+    </div>  
+  </div>
+  <style>
+    <!-- TODO: adapt styles from ScrollView demo -->
+    .photo {
+        margin: 0;
+        height: 220px;
+        display: inline-block;
+        -webkit-background-size: auto 100%;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .photo1 {background-image: url("../../content/mobile/cities/220/sydney.jpg");}
+    .photo2 {background-image: url("../../content/mobile/cities/220/bonn.jpg");}
+    .photo3 {background-image: url("../../content/mobile/cities/220/boston.jpg");}    
+  </style>
+
+  <!-- VIEW: tabstrip navigation --> 
+    <div data-role="layout" data-id="arrange-tabstrip">
+        <header data-role="header">
+            <div data-role="navbar">
+                <!--<a class="nav-button" data-align="left" data-role="backbutton">Back</a>-->
+                <span data-role="view-title"></span>
+                <a data-align="right" data-role="button" class="nav-button" href="#index">Index</a>
+            </div>
+        </header>
+    
+        <p>TabStrip</p>
+    
+        <div data-role="footer">
+            <div data-role="tabstrip">
+                <a href="#tabstrip-arranger-bouquets" data-icon="contacts">Bouquets</a>
+                <a href="#tabstrip-arranger-aboutme" data-icon="contacts">About Me</a>
+                <a href="#tabstrip-arranger-mygarden" data-icon="contacts">My Garden</a>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    var app = new kendo.mobile.Application(document.body);
 </script>
+
+</body>
+</html>0
+    
+    
+
+
