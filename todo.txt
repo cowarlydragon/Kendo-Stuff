@@ -34,3 +34,4 @@ do a basic vendor flow
   
 My orders: website url for now
   
+MISC: tab_and_listview seems to work, try to convert over the ArrangerDetail-notemplate to some template ones...
