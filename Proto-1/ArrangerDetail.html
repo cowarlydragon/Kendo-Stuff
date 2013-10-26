@@ -16,7 +16,7 @@
   </div>
   <!-- TEMPLATE: arranger bouquets listview  -->
   <script type="script/x-kendo-template" id="arrangerBouquetsTemplate">
-    <h3 class="time">#: BQName#</h3><h3>#: From #</h3>
+    <h3 class="time">#: BQName#</h3><h3>FromCell</h3>
     <!-- todo: bouquet image -->
     <a class="ORDER"
         data-role="button"
@@ -97,10 +97,15 @@
 
 <script>
     var app = new kendo.mobile.Application(document.body);
+    window.bouquetList = [
+        {BQName:"BQ-roses",BQDesc:"My what pretty flowers",ID:"00-11-22"},
+        {BQName:"BQ-daisies",BQDesc:"My what pretty daisies",ID:"01-11-22"}
+      ];
+
 </script>
 
 </body>
-</html>0
+</html>
     
     
 
