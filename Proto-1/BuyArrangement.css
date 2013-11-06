@@ -1,0 +1,30 @@
+.button {
+    margin-left: .5em;
+    text-align: center;
+}
+.button:first-of-type {
+    margin-left: 1em;
+}
+.home {
+    background: url(../../content/mobile/shared/sports-home.jpg) no-repeat center center;	
+}
+.facility {
+    background: url(../../content/mobile/shared/sports-facility.jpg) no-repeat center center;	
+}
+.sports {
+    background: url(../../content/mobile/shared/sports.jpg) no-repeat center center;	
+}
+#button-home .head,
+#facility .head,
+#sports .head {
+	display: block;
+	margin: 1em;
+	height: 120px;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+}
+.km-ios .head,
+.km-blackberry .head {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
